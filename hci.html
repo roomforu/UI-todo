@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Reserve Help</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body, html {
+                height: 100%;
+                font-family: "Inconsolata", sans-serif;
+            }
+            .bgimg {
+                background-position: center;
+                background-size: cover;
+                background-image: url("/w3images/coffeehouse.jpg");
+                min-height: 75%;
+            }
+            .menu {
+                display: none;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Links (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-row w3-padding w3-black">
+                <div class="w3-col s3">
+                    <a href="#" class="w3-btn-block w3-hover-white">HOME</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#about" class="w3-btn-block w3-hover-white">ABOUT</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#menu" class="w3-btn-block w3-hover-white">MENU</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#where" class="w3-btn-block w3-hover-white">WHERE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add a background color and large text to the whole page -->
+        <div class="w3-sand w3-white w3-large">
+
+            <!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:900px">
+                    <br>
+                    <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-padding-left w3-padding-right">ระบบช่วยค้นหาห้อง</span></h4>
+
+                </div>  
+
+                <div class="w3-row">
+                    <div class="w3-col m3"><p align="right">*วันที่:  </p></div>
+                    <div class="w3-col m1"><span class="glyphicon glyphicon-calendar"><input class="w3-padding" type="date" placeholder="Date" required name="DateStart" value="2017-11-16">
+                        
+                    </div>
+                    <div class="w3-col m2"><p align="right">ถึง: </p></div>
+                    <div class="w3-col m1"> <input class="w3-padding" type="date" placeholder="Date" required name="DateEnd" value="2017-11-17"></div>
+
+
+
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-container"> 
+
+                        <div class="w3-panel w3-content w3-black">
+                            <p><i>เลือกวัน:</i></p>
+                            <form action="" method="get">
+                                <div class="w3-row">
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="everyday" checked> ทุกวัน </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="monday"> จันทร์ </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="tuesday"> อังคาร </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="wednesday"> พุธ </div>
+                                </div>
+                                <div class="w3-row">
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="thursday"> พฤหัสบดี </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="friday"> ศุกร์ </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="saturday"> เสาร์ </div>
+                                    <div class="w3-col m3"><input type="checkbox" name="dateBox" value="sunday"> อาทิตย์ </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w3-row">
+                    <div class="w3-col m3"><p align="right">เวลา:  </p></div>
+                    <div class="w3-col m1"> <input class="w3-padding" type="time" placeholder="Time" required name="TimeStart" value="12:00:00"> </div>
+                    <div class="w3-col m2"><p align="right">ถึง:  </p></div>
+                    <div class="w3-col m1"><input class="w3-padding" type="time" placeholder="Time" required name="TimeEnd" value="01:00:00"></div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-col m3"><p align="right">ชั้น: </p></div>
+                    <div class="w3-col m1"><input class="w3-padding" type="number" placeholder="ชั้น" required name="Floor" value="1"></div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-col m3"><p align="right">ห้อง: </p></div>
+                    <div class="w3-col m1"><input class="w3-padding" type="number" placeholder="ห้อง" required name="Room" value="111"></div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-col m3"><p align="right">จำนวนผู้ใช้: </p></div>
+                    <div class="w3-col m1"><input class="w3-padding" type="number" required name="Room" value="20"></div>
+                </div>
+
+
+
+            </div> <!--Background Whole Page-->
+
+        </div>
+
+
+        <!--button contain-->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:900px">
+
+                <div class="w3-col m2"><p><button class="w3-btn w3-padding" type="submit">ย้อนกลับ</button></p></div>
+                <div class="w3-col m9"><p><button class="w3-btn w3-padding" type="submit">RESET</button></p></div>
+                <div class="w3-col m1"><p><button class="w3-btn w3-padding" type="submit">ค้นหา</button></p></div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+</html>
